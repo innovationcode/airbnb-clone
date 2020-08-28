@@ -31,9 +31,10 @@
 .header__center > input {
     border: none;
     padding: 10px;
-    outline-width: none;
+    /* outline-width: none;
     -moz-outline-width: none;
-    -webkit-outline-width: none;
+    -webkit-outline-width: none; */
+    outline-style: none;
     width: 250px;
 }
 
