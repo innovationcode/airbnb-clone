@@ -8,7 +8,8 @@
 .banner__info {
     background-color: black;
     color: white;
-    padding-top: 15vh;
+    padding-top: 26vh;
+    /* -moz-padding-top: 25vh; */
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 40px;

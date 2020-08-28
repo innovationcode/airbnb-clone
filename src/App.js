@@ -2,18 +2,28 @@ import React from 'react';
 import Header from './components/header/Header.js'; 
 import Home from './components/home/Home.js';
 import Footer from './components/footer/Footer.js'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SearchPage from './components/searchPage/SearchPage'
 
 import './App.css';
 
 function App() {
   return (
     <div className="app">
-        <Header />
+        <Router>
+            <Header />
 
-        {/* Banner */}
-        <Home />
+            <Switch>
+                <Route exact path = '/'>
+                    <Home />
+                </Route>
+                <Route exact path = '/search'>
+                    <SearchPage />
+                </Route>
+            </Switch>
 
-        <Footer />
+            <Footer />
+        </Router>
     </div>
   );
 }
